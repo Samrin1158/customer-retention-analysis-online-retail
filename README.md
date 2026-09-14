@@ -1,4 +1,4 @@
-# The Customers Who Disappear: Understanding Customer Loyalty and Churn in Online Retail
+# The Customers Who Disappear: Understanding Customer Loyalty and Churn Risk in Online Retail
 
 ## Project Overview
 
@@ -8,7 +8,7 @@ This project investigates customer loyalty, inactivity, potential churn risk, an
 
 Rather than looking only at overall sales, the project analyses customers at an individual level using purchase recency, purchase frequency, and historical revenue.
 
-The analysis aims to answer four key questions:
+### Key Questions:
 
 1. How many customers have become inactive and how long have they been away?
 2. How common are repeat purchases compared with one-time purchases?
@@ -133,7 +133,7 @@ The 208 at-risk high-value customers are associated with:
 
 The project contains four main visualizations.
 
-### 1. Where Did Our Customers Go?
+### 1. Customer Inactivity
 - Shows the distribution of customers based on the number of days since their last purchase.
 
 ### 2. High-Value Customers: Active vs At Risk
@@ -182,9 +182,8 @@ A scatter plot showing the relationship between:
 online-retail-customer-story/
 │
 ├── data/
-│   ├── raw/
-│   └── processed/
-│       └── cleaned_retail.csv
+│   └── raw/
+│       └── online_retail_II.xlsx
 │
 ├── notebooks/
 │   ├── Data Cleaning Notebook
@@ -192,10 +191,16 @@ online-retail-customer-story/
 │   └── 03_customer_retention_story.ipynb
 │
 ├── src/
+│   └── data_cleaning.py
 │
-├── visuals/
+visuals/
+├── customer_inactivity.png
+├── high_value_at_risk.png
+├── customer_value_vs_inactivity.png
+└── cohort_retention_heatmap.png
 │
 ├── reports/
+│   └── online-retail-customer-story.pptx
 │
 ├── requirements.txt
 ├── .gitignore
@@ -235,14 +240,49 @@ Data Storytelling
 Actionable Recommendations
 ```
 
-## Group Contributions
+## Group Project & My Contribution
 
-| Member | Contribution |
-| :--- | :--- |
-| **2609027 Archee** | Dataset selection, data understanding, initial preprocessing and data cleaning |
-| **2609038  Adnan Ulde** | Exploratory Data Analysis, statistical summaries and general visualizations |
-| **2609002 Samrin Chaudhari** | Customer-level analysis, inactivity analysis, high-value customer risk analysis, repeat-purchase analysis, cohort retention analysis, storytelling insights and recommendations, presentation deck, scriptwriting, and video production |
+**Group Project | MSc Big Data Analytics | CIA 2**
 
+This project was completed as a group as part of the MSc Big Data Analytics CIA 2 assessment on **Data Storytelling and Exploratory Data Analysis**.
+
+### My Contribution
+
+My primary responsibility was the **customer retention and risk analysis** component of the project.
+
+I worked on:
+
+- Customer-level behavioural analysis
+- Customer inactivity and recency analysis
+- Repeat vs one-time customer analysis
+- High-value customer identification
+- High-value at-risk customer analysis
+- Cohort retention analysis
+- Customer value vs inactivity visualization
+- Advanced data visualizations
+- Insight generation and interpretation
+- Customer-retention recommendations
+- Data storytelling and presentation narrative
+- Presentation deck development
+- Scriptwriting
+- Final video production
+
+### Key Analysis Developed
+
+My analysis focused on answering:
+
+> **Which customers are disappearing, and which of those customers are important enough for the business to prioritize?**
+
+The analysis identified:
+
+- **40.83%** of customers inactive for more than 180 days
+- **72.39%** repeat customers
+- **1,176** high-value customers
+- **208** high-value customers classified as at risk
+- **17.69%** of high-value customers classified as at risk
+- **£1,546,445.44** in historical revenue associated with these high-value at-risk customers
+
+The findings were translated into customer-retention recommendations and presented through a data storytelling approach.
 ## Project Outcome
 
 This project demonstrates how transaction-level online retail data can be transformed into customer-level insights that support data-driven retention strategies.
